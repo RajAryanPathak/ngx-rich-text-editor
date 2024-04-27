@@ -1,0 +1,85 @@
+/* General container setup */
+.container {
+    position: relative;
+    font-size: 11px;
+  }
+  
+  /* Text editor styles */
+  .text-editor {
+    border: 1px solid #ccc;
+    padding: 8px;
+    min-height: 200px;
+    max-height: 200px;
+    outline: none;
+    background-color: #fff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    padding-left: 40px;
+  }
+  
+  .text-editor:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  }
+  
+  .text-editor ul, .text-editor ol {
+    padding-left: 40px;
+  }
+  .text-editor blockquote {
+    border-left: 4px solid #ccc;
+    margin: 10px 0;
+    padding-left: 16px;
+    color: #666;
+    font-style: italic !important;
+  }
+  
+  
+  /* Toolbar styles */
+  .editor-toolbar {
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .icon-button:focus, .icon-button:hover {
+    background-color: #f0f0f0;
+    outline: none;
+  }
+  .icon-button mat-icon{
+    font-size: 19px;
+  }
+  
+  
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px;
+    min-width: max-content;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

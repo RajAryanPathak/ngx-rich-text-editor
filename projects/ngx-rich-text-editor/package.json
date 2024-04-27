@@ -1,0 +1,17 @@
+{
+  "name": "ngx-rich-text-editor",
+  "version": "0.0.3",
+  "peerDependencies": {
+    "@angular/common": "^17.3.0",
+    "@angular/core": "^17.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "main": "index.js",
+"keywords": ["text editor", "angular", "rich text"],
+"author": "Raj Aryan Pathak pathakrajaryan@gmail.com",
+"license": "MIT"
+
+}

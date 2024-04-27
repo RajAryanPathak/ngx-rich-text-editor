@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="editor-toolbar">
+      <!-- Dropdown for table insertion -->
+      <div class="dropdown">
+        <button class="icon-button" >
+          <!-- Ideally use an Angular material icon -->
+          <i class="fa fa-table" aria-hidden="true"></i>
+
+        </button>
+        <div class="dropdown-content">
+          <lib-grid-selector (selectionConfirmed)="insertTable($event.rows, $event.cols)"
+  >
+          </lib-grid-selector>
+        </div>
+      </div>
+  
+      <!-- Buttons for text commands -->
+      <button class="icon-button" (click)="execCommand('bold')">
+        <i class="fa fa-bold"></i>
+        <!-- <mat-icon>format_bold</mat-icon> -->
+      </button>
+      <button class="icon-button" (click)="execCommand('italic')">
+        <i class="fa fa-italic"></i>
+        <!-- <mat-icon>format_italic</mat-icon> -->
+      </button>
+      <button class="icon-button" (click)="execCommand('insertUnorderedList')">
+        <i class="fa fa-list-ul" aria-hidden="true"></i>
+
+      </button>
+      <button class="icon-button" (click)="execCommand('insertOrderedList')">
+        <i class="fa fa-list-ol" aria-hidden="true"></i>
+
+      </button>
+      <button class="icon-button" (click)="promptForLink()">
+        <i class="fa fa-link" aria-hidden="true"></i>
+
+      </button>
+      <button class="icon-button" (click)="execCommand('insertBlockQuote')">
+        <i class="fa fa-quote-left" aria-hidden="true"></i>
+      </button>
+  
+    </div>
+    <div class="text-editor" contenteditable="true"  (mouseup)="saveSelection()" (keyup)="saveSelection()" #textEditor>
+     
+    </div>
+  </div>
+  
+  
