@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'text-editor-workspace';
+  defaultContent = "<p>Hello World</p>";
+  fun(e: any){
+    console.log("hello",e)
+  }
 }

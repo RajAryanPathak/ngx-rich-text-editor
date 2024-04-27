@@ -1,0 +1,11 @@
+<div class="grid-selector">
+    <div *ngFor="let row of grid; let i = index" class="grid-row">
+      <div *ngFor="let col of row; let j = index"
+           class="grid-cell"
+           [class.selected]="i < hoveredRows && j < hoveredCols"
+           (mouseover)="setHoveredCells(i + 1, j + 1)"
+           (click)="confirmSelection(i + 1, j + 1)">
+      </div>
+    </div>
+  </div>
+  
