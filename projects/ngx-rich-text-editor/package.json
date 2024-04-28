@@ -1,15 +1,16 @@
 {
   "name": "ngx-rich-text-editor",
-  "version": "0.0.3",
+  "version": "0.0.8",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
-    "@angular/core": "^17.3.0"
+    "@angular/core": "^17.3.0",
+    "font-awesome": "^4.7.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
   "sideEffects": false,
-  "main": "index.js",
+  "module": "fesm2022/ngx-rich-text-editor.mjs", 
 "keywords": ["text editor", "angular", "rich text"],
 "author": "Raj Aryan Pathak pathakrajaryan@gmail.com",
 "license": "MIT"

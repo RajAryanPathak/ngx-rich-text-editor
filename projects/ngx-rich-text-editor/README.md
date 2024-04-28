@@ -16,6 +16,15 @@ Install `ngx-rich-text-editor` via npm:
 
 `npm install ngx-rich-text-editor`
 
+Next, this component requires Font Awesome for icons. Install Font Awesome via npm:
+
+`npm install --save font-awesome`
+
+Then, import Font Awesome CSS in your global styles file (styles.css):
+
+`@import 'font-awesome/css/font-awesome.min.css';`
+
+Add NgxRichTextEditorModule in your app.module
 
 ```
 import { NgxRichTextEditorModule } from 'ngx-rich-text-editor';

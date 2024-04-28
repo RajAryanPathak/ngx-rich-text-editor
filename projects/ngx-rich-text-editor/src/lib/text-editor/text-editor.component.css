@@ -2,6 +2,7 @@
 .container {
     position: relative;
     font-size: 11px;
+    height: 100%;
   }
   
   /* Text editor styles */
@@ -9,13 +10,13 @@
     border: 1px solid #ccc;
     padding: 8px;
     min-height: 200px;
-    max-height: 200px;
     outline: none;
     background-color: #fff;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     padding-left: 40px;
+    height: 100%;
   }
   
   .text-editor:focus {

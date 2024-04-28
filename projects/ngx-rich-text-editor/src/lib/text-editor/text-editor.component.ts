@@ -20,6 +20,7 @@ export class TextEditorComponent implements OnInit, OnDestroy {
   constructor() { }
   ngOnInit(): void { }
   ngAfterViewInit(): void {
+    console.log("ElementRef:", this.textEditor);
     console.log("this.initialContent",this.initialContent)
     this.setTextEditorContent(this.initialContent);
     this.addEventListeners();

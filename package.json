@@ -23,7 +23,7 @@
     "@angular/ssr": "^17.3.0",
     "express": "^4.18.2",
     "font-awesome": "^4.7.0",
-    "ngx-rich-text-editor": "^0.0.0-watch",
+    "ngx-rich-text-editor": "^0.0.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
@@ -34,6 +34,7 @@
     "@angular/compiler-cli": "^17.3.0",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
+    "@types/jest": "^29.5.12",
     "@types/node": "^18.18.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",

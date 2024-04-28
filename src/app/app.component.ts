@@ -6,9 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'text-editor-workspace';
-  defaultContent = "<p>Hello World</p>";
-  fun(e: any){
+   title = `hello`
+contentChange(e: any){
     console.log("hello",e)
   }
 }
