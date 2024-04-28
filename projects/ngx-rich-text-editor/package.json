@@ -1,6 +1,6 @@
 {
   "name": "ngx-rich-text-editor",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
     "@angular/core": "^17.3.0",
@@ -13,6 +13,10 @@
   "module": "fesm2022/ngx-rich-text-editor.mjs", 
 "keywords": ["text editor", "angular", "rich text"],
 "author": "Raj Aryan Pathak pathakrajaryan@gmail.com",
-"license": "MIT"
+"license": "MIT",
+"repository": {
+  "type": "git",
+  "url": "git+https://github.com/fireflysemantics/validator.git"
+}
 
 }

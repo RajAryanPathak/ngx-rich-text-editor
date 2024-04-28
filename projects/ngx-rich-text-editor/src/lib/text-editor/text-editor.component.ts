@@ -20,8 +20,8 @@ export class TextEditorComponent implements OnInit, OnDestroy {
   constructor() { }
   ngOnInit(): void { }
   ngAfterViewInit(): void {
-    console.log("ElementRef:", this.textEditor);
-    console.log("this.initialContent",this.initialContent)
+    // console.log("ElementRef:", this.textEditor);
+    // console.log("this.initialContent",this.initialContent)
     this.setTextEditorContent(this.initialContent);
     this.addEventListeners();
   }
@@ -32,9 +32,9 @@ export class TextEditorComponent implements OnInit, OnDestroy {
   }
 
   private setTextEditorContent(content: string): void {
-    console.log("this.initialContent",this.initialContent)
+    // console.log("this.initialContent",this.initialContent)
     if (this.textEditor.nativeElement) {
-      console.log("this.initialContent",this.initialContent)
+      // console.log("this.initialContent",this.initialContent)
       this.textEditor.nativeElement.innerHTML = content;
     }
   }
@@ -108,27 +108,27 @@ export class TextEditorComponent implements OnInit, OnDestroy {
 
 
   private findAncestor(node: Node, tagName: string): HTMLElement | null {
-    console.log("Starting findAncestor");
-    console.log("Initial node:", node, node.nodeName, "Type:", node.nodeType);
+    // console.log("Starting findAncestor");
+    // console.log("Initial node:", node, node.nodeName, "Type:", node.nodeType);
 
     tagName = tagName.toUpperCase();
     if (node.childNodes.length > 0 && node.childNodes[0].nodeType === Node.ELEMENT_NODE && node.childNodes[0].nodeName === 'BLOCKQUOTE') {
-      console.log("First child is a blockquote:", node.childNodes);
+      // console.log("First child is a blockquote:", node.childNodes);
       node = node.childNodes[0]
     }
     // If the node is a text node, start from its parent element.
     if (node.nodeType === Node.TEXT_NODE && node.parentNode) {
       node = node.parentNode;
-      console.log("Adjusted to parent node:", node.nodeName, "Type:", node.nodeType);
+      // console.log("Adjusted to parent node:", node.nodeName, "Type:", node.nodeType);
     }
 
     // Now proceed as previously, ensuring we start from an element node.
     while (node && node.nodeType === Node.ELEMENT_NODE && node.nodeName !== tagName && node.nodeName !== 'BODY' && node.parentNode) {
-      console.log("Traversing node:", node, node.nodeName);
+      // console.log("Traversing node:", node, node.nodeName);
       node = node.parentNode;
     }
 
-    console.log("Final node before return:", node ? node.nodeName : "None");
+    // console.log("Final node before return:", node ? node.nodeName : "None");
     return node && node.nodeName === tagName ? node as HTMLElement : null;
   }
 
@@ -141,10 +141,10 @@ export class TextEditorComponent implements OnInit, OnDestroy {
 
     const range = selection.getRangeAt(0);
     const blockquoteNode = this.findAncestor(range.startContainer, 'BLOCKQUOTE');
-    console.log("blockquoteNode", blockquoteNode)
+    // console.log("blockquoteNode", blockquoteNode)
     setTimeout(() => {
       if (blockquoteNode) {
-        console.log("hello")
+        // console.log("hello")
         this.removeFormatting(blockquoteNode);
       } else {
         this.insertBlockQuote(range);
