@@ -92,6 +92,9 @@ export class AppComponent {
 }
 ```
 
+![alt text](https://github.com/RajAryanPathak/ngx-rich-text-editor/blob/main/src/assets/Capture.PNG)
+
+
 This configuration initializes the text editor with the specified defaultContent. The handleContentChange function logs the content to the console every time it changes, demonstrating how to handle data output from the editor.
 
 
